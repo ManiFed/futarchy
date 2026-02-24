@@ -1,0 +1,293 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.sectionNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--blue-600);
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.sectionSubtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.cardTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.fieldGroup {
+  margin-bottom: 16px;
+}
+
+.fieldGroup:last-child {
+  margin-bottom: 0;
+}
+
+.fieldLabel {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.titleInput {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+  background: white;
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.titleInput:focus {
+  border-color: var(--blue-400);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.titleInput::placeholder {
+  color: var(--text-muted);
+}
+
+.textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  background: white;
+  outline: none;
+  resize: vertical;
+  min-height: 60px;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  line-height: 1.6;
+}
+
+.textarea:focus {
+  border-color: var(--blue-400);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.addBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px dashed var(--border-medium);
+  background: none;
+  color: var(--blue-600);
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.addBtn:hover {
+  background: var(--blue-50);
+  border-color: var(--blue-300);
+}
+
+.parameterList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.parameterItem {
+  padding: 16px;
+  background: var(--bg-canvas);
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+}
+
+.parameterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.paramNameInput {
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  outline: none;
+  flex: 1;
+}
+
+.paramNameInput::placeholder {
+  color: var(--text-muted);
+}
+
+.paramControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.unitInput {
+  width: 60px;
+  padding: 4px 8px;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-align: center;
+  outline: none;
+}
+
+.unitInput:focus {
+  border-color: var(--blue-400);
+}
+
+.removeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.removeBtn:hover {
+  background: var(--red-50);
+  color: var(--red-500);
+}
+
+.boundsRow {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.boundInput {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.boundInput label {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.boundInput input {
+  padding: 6px 10px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text-primary);
+  outline: none;
+  width: 100%;
+}
+
+.boundInput input:focus {
+  border-color: var(--blue-400);
+}
+
+.timeToggle {
+  display: flex;
+  gap: 0;
+  background: var(--bg-canvas);
+  border-radius: 8px;
+  padding: 3px;
+  border: 1px solid var(--border-light);
+}
+
+.timeBtn {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.timeBtn:hover {
+  color: var(--text-primary);
+}
+
+.timeBtnActive {
+  background: white;
+  color: var(--blue-700);
+  box-shadow: var(--shadow-sm);
+}
+
+.customTime {
+  margin-top: 12px;
+}
+
+.numberInput {
+  width: 120px;
+  padding: 8px 12px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.numberInput:focus {
+  border-color: var(--blue-400);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.emptyState {
+  text-align: center;
+  padding: 24px;
+  color: var(--text-muted);
+  font-size: 14px;
+}

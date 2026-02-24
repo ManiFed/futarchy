@@ -1,0 +1,44 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-fast), border-color var(--transition-fast);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  border-color: var(--blue-200);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerAction {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.body {
+  padding: 20px;
+}

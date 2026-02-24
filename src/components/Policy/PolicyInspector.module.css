@@ -1,0 +1,143 @@
+.inspector {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.previewLabel {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.previewCard {
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.previewStatement {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.previewDesc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  border-left: 2px solid var(--blue-200);
+}
+
+.previewParams {
+  margin-bottom: 12px;
+}
+
+.previewParamsLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.paramList {
+  list-style: none;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.paramList li {
+  font-size: 13px;
+  padding: 4px 8px;
+  background: var(--blue-50);
+  border-radius: 4px;
+}
+
+.paramName {
+  color: var(--text-secondary);
+}
+
+.paramValue {
+  font-weight: 600;
+  color: var(--blue-700);
+}
+
+.previewMeta {
+  padding-top: 10px;
+  border-top: 1px solid var(--border-light);
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.previewEmpty {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.completionSection {
+  padding-top: 4px;
+}
+
+.checkList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.checkItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.checkItem.checkDone {
+  color: var(--green-600);
+}
+
+.checkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+
+.checkEmpty {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--border-medium);
+  border-radius: 50%;
+}
+
+.assumptionsSection {
+  padding-top: 4px;
+}
+
+.assumptionsText {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 12px;
+}

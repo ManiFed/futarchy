@@ -1,0 +1,101 @@
+.inspector {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.statsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.statCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+}
+
+.statLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.statValue {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.comparison {
+}
+
+.comparisonBars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comparisonRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comparisonLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.barContainer {
+  flex: 1;
+  height: 8px;
+  background: var(--border-light);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width var(--transition-normal);
+}
+
+.comparisonValue {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  width: 48px;
+  text-align: right;
+}
+
+.info {
+}
+
+.infoText {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.infoText:last-child {
+  margin-bottom: 0;
+}

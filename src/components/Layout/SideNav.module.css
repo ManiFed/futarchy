@@ -1,0 +1,125 @@
+.sideNav {
+  width: var(--nav-width);
+  background: var(--bg-card);
+  border-right: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+.header {
+  padding: 20px 20px 12px;
+}
+
+.headerLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+}
+
+.navList {
+  list-style: none;
+  padding: 0 8px;
+  flex: 1;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  color: var(--text-secondary);
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+.navItem:hover {
+  background: var(--blue-50);
+  color: var(--text-primary);
+}
+
+.navItem.active {
+  background: var(--blue-50);
+  color: var(--blue-700);
+}
+
+.navItem.active .icon {
+  color: var(--blue-600);
+}
+
+.completionDot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--border-light);
+  flex-shrink: 0;
+  transition: all var(--transition-normal);
+}
+
+.completionDot.complete {
+  background: var(--green-500);
+  color: white;
+}
+
+.number {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer {
+  padding: 16px 20px;
+  border-top: 1px solid var(--border-light);
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.progressLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.progressBar {
+  height: 4px;
+  background: var(--border-light);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--blue-500);
+  border-radius: 2px;
+  transition: width var(--transition-slow);
+}

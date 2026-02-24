@@ -1,0 +1,26 @@
+.canvas {
+  flex: 1;
+  overflow: hidden;
+  background: var(--bg-canvas);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.scrollArea {
+  height: 100%;
+  overflow-y: auto;
+  padding: 32px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
