@@ -3,12 +3,15 @@
   align-items: center;
   justify-content: space-between;
   height: var(--topbar-height);
-  background: var(--bg-dark);
+  background: rgba(8, 9, 13, 0.92);
   color: var(--text-on-dark);
-  padding: 0 20px;
+  padding: 0 24px;
+  margin: 12px 12px 0;
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
   flex-shrink: 0;
   z-index: 100;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
 }
 
 .left {
@@ -39,8 +42,8 @@
 }
 
 .nameButton:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.12);
+  background: var(--bg-hover);
+  border-color: var(--border-medium);
 }
 
 .editIcon {
@@ -53,7 +56,7 @@
 }
 
 .nameInput {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--bg-hover);
   border: 1px solid var(--blue-400);
   color: var(--text-on-dark);
   font-size: 16px;
@@ -77,17 +80,17 @@
 }
 
 .statusDraft {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--bg-hover);
   color: var(--text-on-dark-muted);
 }
 
 .statusSimulating {
-  background: rgba(59, 130, 246, 0.15);
+  background: rgba(114, 137, 255, 0.2);
   color: var(--blue-400);
 }
 
 .statusCompleted {
-  background: rgba(34, 197, 94, 0.15);
+  background: rgba(16, 185, 129, 0.2);
   color: var(--green-400);
 }
 
@@ -115,7 +118,7 @@
   align-items: center;
   gap: 8px;
   background: var(--blue-600);
-  color: white;
+  color: #f9fafb;
   border: none;
   padding: 8px 20px;
   border-radius: 8px;
@@ -123,12 +126,12 @@
   font-size: 14px;
   cursor: pointer;
   transition: all var(--transition-fast);
-  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 10px 20px rgba(84, 103, 255, 0.2);
 }
 
 .btnPrimary:hover:not(:disabled) {
   background: var(--blue-700);
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 12px 24px rgba(84, 103, 255, 0.28);
   transform: translateY(-1px);
 }
 
@@ -157,7 +160,7 @@
 }
 
 .btnSecondary:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--bg-hover);
   color: var(--text-on-dark);
 }
 

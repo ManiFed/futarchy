@@ -1,7 +1,8 @@
 .sideNav {
   width: var(--nav-width);
-  background: var(--bg-card);
-  border-right: 1px solid var(--border-light);
+  background: rgba(11, 15, 22, 0.96);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -43,13 +44,13 @@
 }
 
 .navItem:hover {
-  background: var(--blue-50);
+  background: var(--bg-hover);
   color: var(--text-primary);
 }
 
 .navItem.active {
-  background: var(--blue-50);
-  color: var(--blue-700);
+  background: var(--bg-hover);
+  color: var(--blue-400);
 }
 
 .navItem.active .icon {

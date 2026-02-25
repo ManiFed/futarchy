@@ -1,11 +1,13 @@
 .canvas {
   flex: 1;
   overflow: hidden;
-  background: var(--bg-canvas);
+  background: linear-gradient(180deg, #070a10 0%, #05070b 100%);
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.025) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 24px 24px;
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
 }
 
 .scrollArea {

@@ -1,7 +1,8 @@
 .inspector {
   width: var(--inspector-width);
-  background: var(--bg-inspector);
-  border-left: 1px solid var(--border-light);
+  background: rgba(9, 13, 20, 0.96);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;

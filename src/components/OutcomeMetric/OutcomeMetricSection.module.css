@@ -81,8 +81,8 @@
 
 .metricTileActive {
   border-color: var(--blue-500);
-  background: var(--blue-50);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background: var(--bg-hover);
+  box-shadow: 0 0 0 3px rgba(110, 126, 255, 0.2);
 }
 
 .metricTileActive .tileIcon {
@@ -159,7 +159,7 @@
 
 .input:focus {
   border-color: var(--blue-400);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 3px rgba(110, 126, 255, 0.2);
 }
 
 .input::placeholder {
@@ -173,7 +173,7 @@
   font-size: 14px;
   color: var(--text-primary);
   outline: none;
-  background: white;
+  background: var(--bg-elevated);
   cursor: pointer;
 }
 
@@ -213,7 +213,7 @@
   border: 1px solid var(--border-light);
   border-radius: 8px;
   overflow: hidden;
-  background: white;
+  background: var(--bg-elevated);
 }
 
 .numericInput input {
@@ -279,7 +279,7 @@
 
 .textarea:focus {
   border-color: var(--blue-400);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 3px rgba(110, 126, 255, 0.2);
 }
 
 .textarea::placeholder {
