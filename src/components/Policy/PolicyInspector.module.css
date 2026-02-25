@@ -14,7 +14,7 @@
 }
 
 .previewCard {
-  background: white;
+  background: var(--bg-elevated);
   border: 1px solid var(--border-light);
   border-radius: 8px;
   padding: 16px;
@@ -57,7 +57,7 @@
 .paramList li {
   font-size: 13px;
   padding: 4px 8px;
-  background: var(--blue-50);
+  background: var(--bg-hover);
   border-radius: 4px;
 }
 
@@ -136,7 +136,7 @@
   font-size: 13px;
   color: var(--text-secondary);
   line-height: 1.6;
-  background: white;
+  background: var(--bg-elevated);
   border: 1px solid var(--border-light);
   border-radius: 8px;
   padding: 12px;
